@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<style>
+h1,h2{
+  font-family:'Courier New',monoscope;
+  color:rgb(120,23,34);
+}
+.container{
+  position: absolute;
+  background-color:#0f0f0;
+  padding: 20px;
+  margin-left:25%;
+}
+#add{
+  margin-left:70%;
+}
+.line{
+  width:100%;
+  height:2px;
+  background-color:red;
+}
+a{
+text-decoration:none;
+font-size:40px;
+color:rgb(4,151,214);
+}
+img{
+  width:50px;
+}
+</style>
+<body>
+<pre>
+<a href="index.html"><img src="data:image/jpeg;base64,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"></img></a>
+</pre>
+<div class="container">
+  <div>
+    <h1>PRINCE ROHITH PONUGUPATI</h1>
+    <pre id="add">
+              Ongole, India
+             +91 6300002809
+prince.ponugupati@gmail.com
+</pre>
+  </div>
+  <div class="line"></div>
+  <div>
+    <h2>OBJECTIVE</h2>
+    <p>To work in an organization which provides me with sample opportunities to enhance my skills<br> and knowledge along with contributing to the growth of the organisation.</p>
+  </div>
+  <div class="line"></div>
+  <div>
+    <h2>EDUCATION</h2>
+    <pre>
+<strong>BTech(CSE) | Pace Institute of Technology and Science</strong>                   <strong>2019-2023</strong>
+<p>CGPA - 7.9</p>
+<strong>Intermediate | Sri Chaitanya Junior College</strong>                             <strong>2017-2019</strong>
+<p>CGPA - 9.7</p>
+</pre>
+  </div>
+  <div class="line"></div>
+  <div>
+    <h2>PROJECT</h2>
+    <pre>
+<strong>Graphical Image as Password | Web Technologies</strong>                              <strong>2022</strong>    
+<p>It provides more secure to User. The project addresses several security problems together <br>such as online guessing attacks, relay attacks</p>
+</pre>
+  </div>
+  <div class="line"></div>
+  <div>
+    <h2>SKILLS</h2>
+    <ul>
+      <li>Java</li>
+      <li>Spring Boot</li>
+      <li>SQL</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+  </div>
+  <div class="line"></div>
+  <div>
+    <h2>ACHIEVEMENTS</h2>
+    <p>Engaged in multiple college competitions, showcasing diverse skills. Demonstrated excellence and passion, <br>contributing positively to team success.</p>
+  </div>
+</div>
+</body>
+<script>
+</script>
+</html>
